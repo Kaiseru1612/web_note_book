@@ -9,6 +9,7 @@ class Note(models.Model):
         content str
         date_crated datetime
     """
+    id = models.AutoField(primary_key=True)
     title=models.CharField(max_length=255)
     content=models.TextField()
     date_created=models.DateTimeField(auto_now_add=True)
